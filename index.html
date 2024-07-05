@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enrique's Message</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.message {
+			font-size: 36px;
+			font-weight: bold;
+			color: #333;
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+		.letter {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.hearts {
+			color: #ff69b4;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="message">Enrique te quiere decir algo demasiado importante así que pon atención</h1>
+	<button class="button" onclick="showLetter()">Haz click para saber lo que quiere decirte</button>
+	<div class="letter" id="letter" style="display: none;">
+		<p class="hearts">♥️♥️♥️</p>
+		<p>Te quiero mucho......</p>
+		<p class="hearts">♥️♥️♥️</p>
+	</div>
+
+	<script>
+		function showLetter() {
+			document.getElementById("letter").style.display = "block";
+		}
+	</script>
+</body>
+</html>
